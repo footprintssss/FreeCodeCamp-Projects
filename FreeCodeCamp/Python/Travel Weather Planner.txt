@@ -1,0 +1,32 @@
+** start of main.py **
+
+distance_mi = .5
+is_raining = False
+has_bike = False
+has_car = True
+has_ride_share_app = True
+
+# checking if distance is truthy
+if distance_mi == bool(False):
+    print('False')
+
+
+# distance less than 1
+if distance_mi <= 1 and is_raining == False:
+    print('True')
+elif distance_mi > 1 and distance_mi <= 6:
+    if has_bike == True:
+        if is_raining == False:
+            print('True')
+        else:
+            print('False')
+    else:
+        print('False')
+elif distance_mi > 6 and (has_car == True or has_ride_share_app == True):
+    print('True')
+else:
+    print('False')
+
+
+** end of main.py **
+
